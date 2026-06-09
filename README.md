@@ -1,4 +1,4 @@
-# 🧾 Autonomous Purchase Requisition Agent
+# Autonomous Purchase Requisition Agent
 
 > *"From request → approved Purchase Order (PO), with minimal human input"*
 
@@ -6,7 +6,7 @@ A multi-agent AI system that takes a plain-language purchase request like **"We 
 
 ---
 
-## 🎯 Project Overview
+## Project Overview
 
 Modern procurement processes are slow, manual, and error-prone. An employee submits a request, someone manually checks the budget, another person finds suppliers, someone else routes it for approval — days or weeks pass before a PO is issued.
 
@@ -24,7 +24,7 @@ The entire flow is orchestrated by **LangGraph** (a stateful multi-agent framewo
 
 ---
 
-## 🔍 How This Project Works
+## How This Project Works
 
 ```
 User Input (Streamlit UI)
@@ -63,7 +63,7 @@ Each agent has a **specific role** and passes structured state to the next agent
 
 ---
 
-## 🤖 How Agents Work
+## How Agents Work
 
 An **AI agent** is an LLM (Large Language Model) that can:
 
@@ -148,7 +148,7 @@ class RequisitionState(TypedDict):
 
 ---
 
-## 🧠 Agent Roles
+## Agent Roles
 
 ### 1. Interpreter Agent
 **Goal:** Parse the raw user request into a structured requisition.
@@ -191,7 +191,7 @@ class RequisitionState(TypedDict):
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 purchase-requisition-agent/
@@ -281,7 +281,7 @@ purchase-requisition-agent/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Installation
 
@@ -319,7 +319,7 @@ AUTO_APPROVAL_THRESHOLD=5000
 
 ---
 
-## 🎬 Running the Demo
+## Running the Demo
 
 ### Current default runtime (important)
 
@@ -350,7 +350,7 @@ python scripts/run_agent.py --request "We need 20 laptops for the new team"
 
 ---
 
-## 🖥️ Streamlit Demo UI
+## Streamlit Demo UI
 
 The UI (`app.py`) provides:
 
@@ -363,7 +363,7 @@ The UI (`app.py`) provides:
 
 ---
 
-## 🧩 Use Case
+## Use Case
 
 This diagram summarizes the end-to-end procurement use case implemented in this project.
 
